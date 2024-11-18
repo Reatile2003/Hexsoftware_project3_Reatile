@@ -1,0 +1,156 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #74b9ff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff6f61; /* Fun coral color */
+    animation: bounceText 2s infinite;
+}
+
+/* Bouncy Animation */
+@keyframes bounceText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+}
+
+
+.header {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(129, 236, 236, 0.8), rgba(116, 185, 255, 0.8)),
+                url('lion.jpg') no-repeat center center/cover;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+/* Transparent Image */
+.transparent-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('lion.jpg') no-repeat center center/cover;
+    opacity: 0.5; /* Set transparency level */
+    z-index: -1; /* Place behind other content */
+}
+
+
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+body {
+    color: #34495e; /* Calm navy blue */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
+    background-color: #f8f9fa; /* Light pastel background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ff6f61; /* Consistent coral theme for headings */
+}
+
+a {
+    color: #27ae60; /* Bright green links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2ecc71; /* Slightly lighter green for hover */
+}
+
+.animated-animals {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    animation: moveAnimals 5s linear infinite;
+}
+
+.animal {
+    width: 150px; /* Adjust width here */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.giraffe {
+    animation: bounce 2s infinite;
+    transform-origin: bottom center; /* Scale animation grows from the bottom */
+}
+
+.elephant {
+    animation: bounce 3s infinite;
+    transform-origin: bottom center;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.2); 
+    }
+}
+
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #a29bfe;
+    color: white;
+}
+
+.about video {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #74b9ff;
+    color: white;
+}
